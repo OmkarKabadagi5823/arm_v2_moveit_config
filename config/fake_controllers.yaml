@@ -1,0 +1,17 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - base_rotate_joint
+      - shoulder_pitch_joint
+      - elbow_roll_joint
+      - elbow_pitch_joint
+      - wrist_roll_joint
+      - wrist_pitch_joint
+      - eef_roll_joint
+  - name: fake_hand_controller
+    joints:
+      - gripper_leftfinger_joint
+      - gripper_rightfinger_joint
+initial:  # Define initial robot poses.
+  - group: arm
+    pose: ready
